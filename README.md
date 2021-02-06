@@ -1,2 +1,3 @@
-# discordjs-example
-Here is a example of Discord bot in d.js
+# Discordjs example
+
+I think a lot of users know d.js, the famous "discord.js" language. But i wanted to create a repositery with d.js code.
