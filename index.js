@@ -2,7 +2,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 // Bot important variables
-let prefix = '';
+let prefix = 'insert here your bot prefix';
 let token = 'insert here your bot token';
 
 // Starting bot and setting up a status
@@ -20,7 +20,7 @@ bot.on('ready', () => {
 
 // An example of basic command
 bot.on('message', message => {
-      if(message.content === '!test') {
+      if(message.content === prefix + '!test') {
       message.reply('Heya !\nYou just send : ', message.content);  
       }
 });
