@@ -37,17 +37,17 @@ for (const file of commandFiles) {
 }
   // Bot responds to commands 
 bot.on('message', message => {
-  if (!message.content.startsWith(prefix) || message.author.bot) return;
-
+	if (!message.content.startsWith(prefix) || message.author.bot) return;
+	
 	const args = message.content.slice(prefix.length).trim().split(/ +/);
 	const command = args.shift().toLowerCase();
-
+	
 	if (!client.commands.has(command)) return;
   try {
 	  bot.commands.get(command).execute(message, args);
 	} catch (error) {
 	  console.error(error);
-		message.reply('An error occured when i tried to execute this command.');
+	  message.reply('An error occured when i tried to execute this command.');
 	}
 });  
 
